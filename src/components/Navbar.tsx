@@ -38,7 +38,7 @@ export default function Navbar() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, type: "spring" }}
-          className="glass rounded-2xl px-6 py-3 flex items-center justify-between w-[95%] max-w-7xl shadow-xl bg-white/70 backdrop-blur-xl border border-brass relative z-50 h-[80px]"
+          className="glass rounded-2xl px-6 py-3 flex items-center justify-between w-[95%] max-w-7xl shadow-xl bg-white/70 backdrop-blur-xl border border-[#FF9933] relative z-50 h-[80px]"
         >
           {/* Logo */}
           <Link 
@@ -59,14 +59,15 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-10 text-base font-medium text-charcoal/90">
-            <Link href="#services" className="hover:text-brass transition-colors font-serif tracking-wide">Services</Link>
-            <Link href="#gallery" className="hover:text-brass transition-colors font-serif tracking-wide">Gallery</Link>
-            <Link href="#contact" className="hover:text-brass transition-colors font-serif tracking-wide">Contact</Link>
+            <Link href="/about" className="hover:text-brass transition-colors font-serif tracking-wide">About</Link>
+            <Link href="/services" className="hover:text-brass transition-colors font-serif tracking-wide">Services</Link>
+            <Link href="/gallery" className="hover:text-brass transition-colors font-serif tracking-wide">Gallery</Link>
+            <Link href="/contact" className="hover:text-brass transition-colors font-serif tracking-wide">Contact</Link>
           </div>
 
           {/* Desktop Call/CTA */}
           <div className="hidden md:block">
-             <a href="tel:8377885383" className="bg-charcoal text-white text-sm px-8 py-3 rounded-xl hover:bg-brass transition-colors duration-300 shadow-md font-bold tracking-wide inline-block">
+             <a href="tel:8447535373" className="bg-charcoal text-white text-sm px-8 py-3 rounded-xl hover:bg-[#FF9933] transition-colors duration-300 shadow-md font-bold tracking-wide inline-block">
               Call Now
             </a>
           </div>
@@ -93,21 +94,28 @@ export default function Navbar() {
           >
             <div className="glass rounded-3xl p-6 bg-white/90 shadow-2xl border border-white/50 flex flex-col gap-4 text-center">
                <Link 
-                 href="#services" 
+                 href="/about" 
+                 onClick={() => setIsOpen(false)}
+                 className="py-3 text-lg font-medium text-charcoal hover:text-brass hover:bg-warm-white rounded-xl transition-all"
+               >
+                 About Us
+               </Link>
+               <Link 
+                 href="/services" 
                  onClick={() => setIsOpen(false)}
                  className="py-3 text-lg font-medium text-charcoal hover:text-brass hover:bg-warm-white rounded-xl transition-all"
                >
                  Our Services
                </Link>
                <Link 
-                 href="#gallery"
+                 href="/gallery"
                  onClick={() => setIsOpen(false)}
                  className="py-3 text-lg font-medium text-charcoal hover:text-brass hover:bg-warm-white rounded-xl transition-all"
                >
                  Gallery
                </Link>
                <Link 
-                 href="#contact" 
+                 href="/contact" 
                  onClick={() => setIsOpen(false)}
                  className="py-3 text-lg font-medium text-charcoal hover:text-brass hover:bg-warm-white rounded-xl transition-all"
                >
@@ -116,7 +124,7 @@ export default function Navbar() {
                
                <div className="h-px bg-charcoal/10 my-2" />
                
-               <a href="tel:8377885383" className="w-full bg-charcoal text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg">
+               <a href="tel:8447535373" className="w-full bg-charcoal text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg hover:bg-[#FF9933] transition-colors">
                   <Phone className="w-5 h-5" /> Call Now
                </a>
             </div>

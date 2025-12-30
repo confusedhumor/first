@@ -30,7 +30,7 @@ export default function ContactForm() {
         >
           <div className="text-center mb-10">
             <span className="text-brass font-bold tracking-wider uppercase text-sm">Get in Touch</span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-charcoal mt-2">Start Your Project</h2>
+
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -90,7 +90,7 @@ export default function ContactForm() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
-              className={`w-full py-4 rounded-xl font-bold text-lg shadow-lg flex items-center justify-center gap-2 transition-all duration-500 ${isSubmitted ? 'bg-green-600 text-white' : 'bg-charcoal text-white hover:bg-brass'}`}
+              className={`w-full py-4 rounded-xl font-bold text-lg shadow-lg flex items-center justify-center gap-2 transition-all duration-500 ${isSubmitted ? 'bg-green-600 text-white' : 'bg-charcoal text-white hover:bg-[#FF9933]'}`}
             >
               {isSubmitted ? (
                 <>

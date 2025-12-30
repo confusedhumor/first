@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  '/carousel/chabi_shop.png',
   '/carousel/slide1.png',
   '/carousel/slide2.png',
   '/carousel/slide3.png',
@@ -32,13 +31,15 @@ export default function Carousel() {
           transition={{ duration: 1.5 }}
           className="absolute inset-0"
         >
-          <Image
-            src={images[currentIndex]}
-            alt={`Slide ${currentIndex + 1}`}
-            fill
-            className="object-cover"
-            priority={currentIndex === 0}
-          />
+          {images[currentIndex] && (
+            <Image
+              src={images[currentIndex]}
+              alt={`Slide ${currentIndex + 1}`}
+              fill
+              className="object-cover"
+              priority={currentIndex === 0}
+            />
+          )}
         </motion.div>
       </AnimatePresence>
     </div>

@@ -4,10 +4,13 @@ import { motion } from 'framer-motion';
 
 // Using placeholder images from Unsplash for now, can be replaced with real assets later
 const images = [
-  { src: "https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&q=80&w=800", alt: "Golden Keys", span: "col-span-2 row-span-2" },
-  { src: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&q=80&w=800", alt: "Locksmith Tool", span: "col-span-1" },
-  { src: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800", alt: "Vintage Lock", span: "col-span-1" },
-  { src: "https://images.unsplash.com/photo-1516962080544-eac695c93791?auto=format&fit=crop&q=80&w=800", alt: "Workshop Detail", span: "col-span-2" },
+  { src: "/gallery_red_keys.png", alt: "Wide Selection of Keys", span: "col-span-2 row-span-2" },
+  { src: "/gallery_siemens_lock.jpg", alt: "Smart Digital Lock", span: "col-span-1 row-span-1" },
+  { src: "/gallery_plantex_handle.jpg", alt: "Modern Door Handle", span: "col-span-1 row-span-1" },
+
+  { src: "/gallery_gold_handle.jpg", alt: "Premium Gold Finish Handle", span: "col-span-1 row-span-1" },
+  { src: "/gallery_car_keys_set.jpg", alt: "Car Key Remotes", span: "col-span-1 row-span-1" },
+
 ];
 
 export default function Gallery() {
@@ -25,7 +28,7 @@ export default function Gallery() {
             <span className="text-brass font-bold tracking-wider uppercase text-sm">Visuals</span>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal mt-2">Inside the Craft</h2>
           </div>
-          <p className="max-w-md text-charcoal/70">
+          <p className="text-right text-[#FF9933] font-bold max-w-md">
             A glimpse into our daily dedication. Where raw metal transforms into security and peace of mind.
           </p>
         </motion.div>

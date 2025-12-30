@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Montserrat } from 'next/font/google';
 import "./globals.css";
-import FloatingKeysBackground from "@/components/FloatingKeysBackground";
+
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -25,7 +25,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${montserrat.variable} antialiased font-sans bg-warm-white text-charcoal overflow-x-hidden`}
       >
-        <FloatingKeysBackground />
+
         {children}
       </body>
     </html>
