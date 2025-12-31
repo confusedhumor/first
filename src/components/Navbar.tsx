@@ -92,7 +92,7 @@ export default function Navbar() {
             variants={menuVariants}
             className="absolute top-24 left-4 right-4 md:hidden"
           >
-            <div className="glass rounded-3xl p-6 bg-white/90 shadow-2xl border border-white/50 flex flex-col gap-4 text-center">
+            <div className="bg-white rounded-3xl p-6 shadow-2xl border border-gray-200 flex flex-col gap-4 text-center">
                <Link 
                  href="/about" 
                  onClick={() => setIsOpen(false)}
